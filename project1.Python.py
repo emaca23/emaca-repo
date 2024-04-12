@@ -1,18 +1,40 @@
-#Scenario: Your company needs to learn about the files located on various machines. 
-#You have been asked to build a script that extracts information such as the 'name' and
-#'size' about the files in the current working directory and stores it in a list of dictionaries.
+# This code creates dictionaries representing files and then deletes 'user' and 'date' keys from them
 
-#Create a script that generates a list of dictionaries about files in the working directory. 
-#Then print the list.
-#Push your code to GitHub and include the link in your write up
-#size {}
-#working_directory = {}
-#print(len(numbers))
-#print(type(numbers), number)
-
+# Create a dictionary named 'file'
 file = {}
-file ['dictionaries.py'] = '600kps'
-file ['Hello_World.py'] = '108kps'
-print(file)
-print(len(file))
+
+# Add key-value pairs to the 'file' dictionary
+file = {'name': 'dictionary.py', 'user': 'ec2-user', 'size': '600kb', 'date': 'Feb8'}
+
+# Delete the 'user' key from the 'file' dictionary
+del file['user']
+
+# Delete the 'date' key from the 'file' dictionary
+del file['date']
+
+# Print the data type and contents of the 'file' dictionary
+print(type(file), file)
+
+# Repeat the same process for four more files ('hello_world.py', 'lists.py', 'README.md', 'test_name.py')
+file = {'name': 'hello_world', 'user': 'ec2-user', 'size': '108kb', 'date': 'Feb7'}
+del file['user']
+del file['date']
+print(type(file), file)
+
+file = {'name': 'lists.py', 'user': 'ec2-user', 'size': '594kb', 'date': 'Feb8'}
+del file['user']
+del file['date']
+print(type(file), file)
+
+
+file = {'name': 'README.md', 'user': 'ec2-user', 'size': '26kb', 'date': 'Jan31'}
+del file['user']
+del file['date']
+print(type(file), file)
+
+file = {'name': 'test_name.py', 'user': 'ec2-user', 'size': '68kb', 'date': 'Feb7'}
+del file['user']
+del file['date']
+print(type(file), file)
+
 
