@@ -23,3 +23,10 @@ if not file_info:
 for filename, file_size in file_info.items():
   print(f"Filename: {filename}, Size: {file_size} bytes") #    A dictionary with filename as key and file size in bytes as value, 
     # or an empty dictionary if the directory is not found.
+    
+    
+    
+    
+    
+    
+    
