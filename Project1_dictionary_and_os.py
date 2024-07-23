@@ -5,7 +5,7 @@ def get_file_info(directory): #creates a dictionry with with file name and size
 
   file_info = {} # creates dictionary
   
-  for root, _, files in os.walk(directory): #iterates the root for files(outer loop)
+  for root, _, files in os.walk(directory): #iterates the root for files(outer loop) , os.walk generates the filenames in a directory tree
     
     for filename in files:                  #(inner loop)
       file_path = os.path.join(root, filename) #completes the file path by joining current directory and the file name
